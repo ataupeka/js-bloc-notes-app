@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+    line-height: 1.5;
+    font-weight: 300;
+    font-size: 20px;
+ 
+ 
+}
+
+.container{
+    max-width: 1080px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+.container h2{
+    font-size: 26px;
+    text-align: center;
+    opacity: 0.9;
+    margin-bottom: 10px;
+}
+
+.container-input h3{
+    color: #A2B29F;
+}
+
+.note-wrapper{
+    margin: 10px 0;
+    padding: 5px 0;
+}
+
+#note-title,
+#note-content{
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    font-size: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+
+}
+
+#note-content{
+    resize: none;
+}
+
+#note-title:focus,
+#note-content:focus{
+    outline: 0;
+}
+
+
+.btn{
+    background-color: #A2B29F;
+    border: 2px solid;
+    color: #fff;
+    padding: 5px 0;
+    width: 120px;
+    border-radius: 2px;
+    font-size: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn:focus{
+    outline: 0;
+}
+
+.btn:hover{
+   background: #A2B29F; 
+   box-shadow: 0 0 8px 0 gray;
+}
+
+.note-list{
+    margin: 20px 0;
+    background: #A2B29F;
+    padding: 15px;
+    border-radius: 2px;
+    box-shadow: 0 0 7px 0 gray;
+}
+
+.note-item h3{
+    margin-bottom: 10px;
+}
+
+.note-item p{
+    padding-bottom: 10px;
+}
+
+.note-item .btn{
+    margin-top: 10px;
+    background: #fff;
+    border: 2px solid #A2B29F;
+    color: #A2B29F;
+}
+
+@media(min-width: 992px){
+    .note-list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .warning{
+        border-color: rgba(0, 0, 0, 0.2) grey;
+    }
+}
+
